@@ -58,5 +58,5 @@ Robot.how_many()
 print("=======================")
 
 print("***PRINTING DOCSTRINGS***")
-print(Robot.__doc__)
-print(Robot.say_hi.__doc__)
+print(Robot.__doc__) # class docstrings
+print(Robot.say_hi.__doc__) # method docstrings
