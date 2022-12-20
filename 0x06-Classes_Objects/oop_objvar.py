@@ -56,3 +56,7 @@ happy2.die()
 
 Robot.how_many()
 print("=======================")
+
+print("***PRINTING DOCSTRINGS***")
+print(Robot.__doc__)
+print(Robot.say_hi.__doc__)
