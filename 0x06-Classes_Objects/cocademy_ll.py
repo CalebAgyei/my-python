@@ -27,9 +27,23 @@ class SLinkedList:
 
         print(llstr)
 
+    def insert_at_end(self, data):
+        if self.head is None:
+            self.head = Node(data, None)
+            return
+
+        itr = self.head
+        while itr.next_node:
+            itr = itr.next_node
+
+        itr.next_node = Node(data, None)
+
+
 if __name__ == '__main__':
     ll = SLinkedList()  # creates a linked lists with nodes
-    ll.insert_at_beginning(5)
-    ll.insert_at_beginning(89)
+    ll.insert_at_end(33)
+    ll.insert_at_beginning(100)
+    ll.insert_at_end(56)
+    ll.insert_at_end(580)
+    ll.insert_at_beginning(256)
     ll.print()  # calls the print method to print the linked list
-
