@@ -21,12 +21,17 @@ def addition(a, b):
     >>> addition(r, 4)
     Traceback (most recent call last):
         ...
-    TypeError: a and b must be integers
+    NameError: name 'r' is not defined
 
-    >>> addition(10, "Hello")
+    >>> addition(10, 40.938)
     Traceback (most recent call last):
-        ...
-    TypeError: a and b cannot be strings
+      File "/usr/lib/python3.11/doctest.py", line 1350, in __run
+        exec(compile(example.source, filename, "single",
+      File "<doctest __main__.addition[1]>", line 1, in <module>
+        addition(10, 40.938)
+      File "/home/vagrant/my-python/0x07-Python_Tests/./2-example.py", line 39, in addition
+        raise TypeError("a and b must be integers")
+    TypeError: a and b must be integers
 
     >>> addition(20, 8)
     160
@@ -37,8 +42,6 @@ def addition(a, b):
 
     if not isinstance(a, int) or not isinstance(b, int):
         raise TypeError("a and b must be integers")
-    if isinstance(a, str) or isinstance(b, str):
-        raise TypeError("a and b cannot be strings")
     return a + b
 
 if __name__ == "__main__":
