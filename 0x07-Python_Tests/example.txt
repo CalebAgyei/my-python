@@ -1,0 +1,15 @@
+The "4-testfile" module
+
+Using "addition"
+
+First import "addition" from the "4-testfile" module
+
+    >>> from 4-testfile import addition
+
+Now use it:
+
+    >>> addition(4, 6)
+    10
+
+    >>> addition(6, 20)
+    26
