@@ -2,8 +2,8 @@
 
 """Defines a class Person."""
 
-
-class Person(object):
+# class Person(Object) - used in lower versions below python v3
+class Person:
     """Class that defines a person."""
     # Constructor
     def __init__(self, name, id):
