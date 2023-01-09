@@ -22,5 +22,5 @@ class Derived(Base1, Base2):
     def printStrs(self):
         print(self.str1, self.str2)
 
-ob = Derived()
-ob.printStrs()
+ob = Derived()  # prints "Base1", "Base2", and "Derived"
+ob.printStrs()  # prints "Geek1" and "Geek2"
