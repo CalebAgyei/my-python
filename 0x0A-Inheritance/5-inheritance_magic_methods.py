@@ -110,6 +110,13 @@ class Reptile(Animal):
 
         return (sum)
 
+# POLYMORPHISM
+
+def get_birth_type(the_object):
+    print("the {} is {}".format(type(the_object).__name__,
+        the_object.birth_type))
+
+
 def main():
     animal1 = Animal("born alive")
 
@@ -137,5 +144,12 @@ def main():
     print()
 
     print("Sum : {}".format(reptile1.sum_all(1, 2, 3, 4, 5)))
+    print()
+
+    get_birth_type(reptile1)
+    get_birth_type(mammal1)
+    print()
+
+
 
 main()
